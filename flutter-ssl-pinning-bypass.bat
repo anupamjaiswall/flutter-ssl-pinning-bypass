@@ -30,13 +30,13 @@ echo.
 
 REM Check if APK exists
 if not exist "%APK_PATH%" (
-    echo [ERROR] APK file not found: %APK_PATH%
+    echo [ERROR] APK file not found: "%APK_PATH%"
     exit /b 1
 )
 
 REM Check if apktool exists
 if not exist "%APKTOOL_PATH%" (
-    echo [ERROR] Apktool not found: %APKTOOL_PATH%
+    echo [ERROR] Apktool not found: "%APKTOOL_PATH%"
     exit /b 1
 )
 
